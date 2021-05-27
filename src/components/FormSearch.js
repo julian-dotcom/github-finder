@@ -16,9 +16,10 @@ const FormSearch = ({ search, setSearch, setGithubUser }) => {
             <Form>  
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Search by username</Form.Label>
-                <Form.Control type="username" placeholder="username" onChange={handleChange} />
+                <Form.Control type="username" placeholder="username" onChange={handleChange} style={{ maxWidth: '800px', margin: 'auto'}}/>
                 <Form.Text className="text-muted">
-                Results will appear while you type. I preset Github because their profile completely filled out.
+                Results will appear while you type. Github's own profile is set to default because their profile completely filled out. <br />
+                The server may take a while to respond.
                 </Form.Text>
             </Form.Group>
             </Form>
